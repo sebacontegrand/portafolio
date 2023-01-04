@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Condensed&display=swap');
+$font-stack:'Montserrat',sans-serif;
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+
+
+html,
+body{
+    
+    font-family: $font-stack;
+}
+h1{
+    font-size: 2rem;
+}
+h2{
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+p{
+    font-size: 1rem;
+    margin:10px 0;
+    line-height: 1.9em;
+}
+a{
+    text-decoration: none;
+}
+hr{
+    width:50%;
+    margin: 0 auto;
+}
+
+.container{
+    margin:auto;
+    max-width: 1300px;
+    overflow:auto;
+    padding:0 20px
+}
+.txt-large{
+    font-size: 18px;
+}
+.txt-black{
+    font-weight: 700;
+}
+.display1{
+    font-size: 3rem;
+    padding-bottom: 30px;
+}
+.btn{
+    display:inline-block;
+    text-align: center;
+    font-size: 15px;
+    padding:12px 23px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    &-black{
+        background:black;
+        color:white;
+        border:none;
+    }
+}
+//nav
+  #navbar{
+    height:15vh;
+    overflow:auto;
+    padding-top:20px ;
+    padding-bottom: 20px;
+    a{
+        color:black;
+        font-weight: 500;
+    }
+    .logo{
+        font-size:1.5rem;
+        text-transform: uppercase;
+    }
+    .container{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        height:100%;
+    }
+    ul{
+        display:flex;
+        list-style:none;
+        li{
+            margin-left: 40px;
+        }
+        .btn-menu{
+            background-color: black;
+            color:white;
+            padding:20px 18px;
+        }
+    }
+
+  }//End #Navbar
+
+  //showcase
+  #showcase{
+    height:85vh;
+    .showcase-flex{
+        display:flex;
+        &-description{
+            flex: 1;
+            padding:50px 0;
+            .btn{
+                margin:20px 0;
+            }
+            ul{
+                display: flex;
+                list-style: none;
+                img{
+                    height:90px;
+                    padding: 5px;
+                }
+            }
+        }
+        &-image{
+            flex: 1;
+            img{
+                width:80%;
+                height:80%;
+                float: right;
+                box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+            }
+        }
+    }
+  }//end Showcase
+
+  //Games
+  #games{
+    padding:80px 0;
+    .txt-large{
+        text-align: center;
+        padding: 20px 30px;
+    }
+    .game-flex{
+        display:flex;
+        justify-content: center;
+        img{
+            width:100%;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        }
+        &-box{
+            width:100px;
+            margin:20px;
+            p{
+               text-align: center; 
+            }
+        }
+    }
+  }
+  //end #Games
+
+  //#Group
+  #group{
+    padding:80px;
+    .group-table{
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        width:1000px;
+        padding:50px 20px;
+        margin: 0 auto;
+        table{
+            tr td{
+                color:#c4c4c4;
+                padding:20px;
+                width: 600px;
+                text-align: center;
+            }
+            tr th{
+                padding-left: 10px;
+            }
+            .group-table-country{
+                color:rgb(12, 19, 51)
+            }
+        }
+    }
+
+  }//end group
+
+  //#about
+
+  #about{
+    padding:80px 0;
+    .about-flex{
+        display:flex;
+        gap:40px;
+        &-image{
+            flex:1;
+            img{
+                width:60%;
+                padding-left: 100px;
+            }
+        }
+        &-description{
+            flex:1
+        }
+        .ul{
+            font-style: italic;
+        }
+    }
+  }//end-about
+
+  //qatar
+  #qatar{
+    padding:80px 0;
+    text-align:center;
+  }
+  //footer
+  #mainfooter{
+    text-align: center;
+    padding:30px;
+  }
